@@ -1,5 +1,5 @@
-#ifndef functions_HPP
-# define functions_HPP
+#ifndef whatever_HPP
+# define whatever_HPP
 
 template<typename T> void swap(T & a, T & b);
 template<typename T> T min(T & a, T & b);

@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "functions.hpp"
+#include "whatever.hpp"
 
 int main( void ) {
 	int a = 2;
