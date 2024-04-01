@@ -11,28 +11,18 @@ class Array {
 		size_t _size;
 	public:
 		Array();
+		Array(unsigned long n);
 		~Array();
 		Array(const Array & a);
+
 		Array & operator = (const Array & a);
-		Array & operator [] (size_t index);
-		Array & operator new[] (size_t index);
+
+		T & operator [] (unsigned long index);
+		void * operator new[] (unsigned long index);
+
+		size_t size() const;
 };
 
-Array::Array() {
-	/*constructor*/
-}
-Array::Array(size_t n) {
-	/*constructor*/
-}
-~Array::Array() {
-	/*destructor*/
-}
-Array::Array(const Array & a) {
-	/*copy constructor*/
-}
-Array & Array::operator = (const Array & a) {
-	/*copy assignment operator*/
-}
-
-
+/*instantiation of class template of Array*/
+template class Array<int>;
 #endif
